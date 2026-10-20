@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joshua Grey, historietista y artista gráfico peruano radicado en Lima. Historietas, fanzines, ilustración en carboncillo y adaptaciones gráficas de tradiciones orales peruanas.">
+  <meta name="author" content="Joshua Grey">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Joshua Grey — Historietista y artista gráfico">
+  <meta property="og:description" content="Historietas, fanzines, ilustración en carboncillo y narrativa gráfica de Joshua Grey, artista peruano radicado en Lima.">
+  <meta property="og:locale" content="es_PE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Joshua Grey — Historietista y artista gráfico">
+  <meta name="twitter:description" content="Historietas, fanzines, ilustración en carboncillo y narrativa gráfica de Joshua Grey.">
+  <meta name="theme-color" content="#d3181e">
+  <title>Joshua Grey — Historietista y artista gráfico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joshua Grey",
+    "jobTitle": "Historietista y artista gráfico",
+    "email": "mailto:joshugr@gmail.com",
+    "address": {"@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE"},
+    "sameAs": ["https://instagram.com/joshgrey.art/"]
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#" id="homeLink">Joshua Grey</a>
+      <div class="descriptor">Portafolio de historieta y narrativa gráfica</div>
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav-link" data-open="infoPanel">Información</button>
+        <button class="nav-link" data-open="contactPanel">Correo</button>
+        <a class="nav-link" href="https://instagram.com/joshgrey.art/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      </nav>
+    </header>
+
+    <section class="project-grid" aria-label="Proyectos">
+      <button class="project-card" data-project="0">
+        <img src="assets/project-01/3-El-Sueno-de-la-razon-produce-monstruos-JOSHUA-GREY-J-GREY.jpg" alt="Página de historieta en blanco y negro" loading="lazy">
+        <span class="caption">El Sueño de la Razón Produce Monstruos</span>
+      </button>
+      <button class="project-card" data-project="1">
+        <img src="assets/project-02/1-La-Laguna-de-Paca-JOSHUA-GREY-J-GREY.png" alt="Página de historieta" loading="lazy">
+        <span class="caption">La Laguna de Paca</span>
+      </button>
+      <button class="project-card" data-project="2">
+        <img src="assets/project-03/4-El-Diluvio-JOSHUA-GREY-J-GREY.png" alt="Ilustración para historieta" loading="lazy">
+        <span class="caption">El Diluvio</span>
+      </button>
+      <button class="project-card" data-project="3">
+        <img src="assets/project-04/Leyenda-de-Maria-Paz-pagina2-JOSHUA-GREY-J-GREY.png" alt="Página ilustrada de historieta" loading="lazy">
+        <span class="caption">Leyenda de María Paz</span>
+      </button>
+      <button class="project-card" data-project="4">
+        <img src="assets/project-05/EL-SANTO-DE-NUEVA-ORLEANS-JOSHUA-GREY-JGREY.jpg" alt="Página de publicación ilustrada" loading="lazy">
+        <span class="caption">Getting High (una historia inspirada en El Santo)</span>
+      </button>
+      <button class="project-card" data-project="5">
+        <img src="assets/project-06/4-Divagaciones-de-un-Pobre-Diablo-JOSHUA-GREY-J-GREY.png" alt="Página de Divagaciones de un Pobre Diablo" loading="lazy">
+        <span class="caption">Divagaciones de un Pobre Diablo</span>
+      </button>
+    </section>
+    <footer class="footer-note">Historieta · Ilustración · Narrativa gráfica</footer>
+  </main>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <section class="overlay" id="projectPanel" aria-modal="true" role="dialog" aria-labelledby="projectTitle" hidden>
+    <div class="panel-head">
+      <span id="projectTitle">Proyecto</span><span id="projectIndex">01 / 06</span>
+      <button class="close" aria-label="Cerrar">×</button>
+    </div>
+    <div class="panel-content project-detail">
+      <div class="project-meta">
+        <p class="eyebrow">Joshua Grey · Portafolio</p>
+        <h1 id="detailTitle"></h1>
+        <p id="detailDescription">Narrativa gráfica e ilustración. Esta ficha se puede ampliar con una sinopsis, datos editoriales y créditos específicos de la obra.</p>
+        <p class="muted" id="detailType"></p>
+      </div>
+      <div class="detail-art" id="detailArt"></div>
+    </div>
+  </section>
+
+  <section class="overlay" id="infoPanel" aria-modal="true" role="dialog" aria-labelledby="infoTitle" hidden>
+    <div class="panel-head"><span id="infoTitle">Información</span><span>Joshua Grey</span><button class="close" aria-label="Cerrar">×</button></div>
+    <div class="panel-content info-content">
+      <div class="info-intro">
+        <p class="eyebrow">Historieta · Ilustración · Narrativa gráfica</p>
+        <h1>Joshua Grey</h1>
+        <p>Historietista y artista gráfico peruano, distinguido con una Mención Honrosa en el IV Concurso Nacional de Narrativa Gráfica. <a href="https://www.gob.pe/institucion/cultura/noticias/680318-ministerio-de-cultura-presenta-a-los-ganadores-del-4-concurso-nacional-de-narrativa-grafica" target="_blank" rel="noopener noreferrer">Leer la nota del Ministerio de Cultura ↗</a></p>
+        <p>Su práctica editorial se articula en torno a la autopublicación y a la exploración constante de las posibilidades narrativas de la tinta, el carboncillo y la experimentación gráfica. Su obra indaga en atmósferas oscuras, personajes marginales y relatos que transitan entre lo cotidiano y lo extraño.</p>
+        <p><a href="mailto:joshugr@gmail.com">Email ↗</a> &nbsp;·&nbsp; <a href="https://instagram.com/joshgrey.art/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></p>
+      </div>
+      <div class="info-columns">
+        <div><h2>Obra seleccionada</h2><p>El Sueño de la Razón Produce Monstruos<br>Divagaciones de un Pobre Diablo<br>Relatos de la Tierra<br>Música para Adolescentes</p></div>
+        <div><h2>Práctica artística</h2><p>Historieta<br>Narrativa gráfica<br>Ilustración<br>Autopublicación</p></div>
+        <div><h2>Contacto</h2><p>Para encargos, consultas editoriales y colaboraciones.</p><button class="text-button" data-open="contactPanel">Escribir un mensaje ↗</button></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="overlay contact-overlay" id="contactPanel" aria-modal="true" role="dialog" aria-labelledby="contactTitle" hidden>
+    <div class="panel-head"><span id="contactTitle">Contacto</span><span>Joshua Grey</span><button class="close" aria-label="Cerrar">×</button></div>
+    <div class="panel-content contact-content">
+      <p class="eyebrow">¿Tienes un proyecto en mente?</p>
+      <h1>Escríbeme.</h1>
+      <form id="contactForm">
+        <label>Nombre<input name="name" required autocomplete="name" placeholder="Tu nombre"></label>
+        <label>Correo electrónico<input type="email" name="email" required autocomplete="email" placeholder="tu@correo.com"></label>
+        <label>Asunto<input name="subject" required placeholder="Motivo del mensaje"></label>
+        <label>Mensaje<textarea name="message" rows="5" required placeholder="Cuéntame un poco más…"></textarea></label>
+        <button class="submit-button" type="submit">Preparar correo ↗</button>
+        <p class="form-note">Al enviar, se abrirá tu aplicación de correo con el mensaje preparado para remitirlo a Joshua.</p>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
