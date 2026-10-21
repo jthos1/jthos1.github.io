@@ -66,16 +66,19 @@ button {
 
 .brand {
   width: max-content;
-  font-family: var(--font-sans);
-  font-size: 15px;
-  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.7;
   letter-spacing: -0.025em;
 }
 
 .descriptor {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 500;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
 }
 
 .nav {
@@ -91,10 +94,12 @@ button {
   padding: 0;
   cursor: pointer;
   white-space: nowrap;
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.5;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
 }
 
 .nav-link:hover,
@@ -489,13 +494,13 @@ h1 {
   }
 
   .brand {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .descriptor {
     grid-column: 1 / -1;
     grid-row: 2;
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .nav {
@@ -506,7 +511,7 @@ h1 {
   }
 
   .nav-link {
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .project-grid {
