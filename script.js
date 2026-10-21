@@ -2,7 +2,7 @@ const projects = [
   {
     "title": "El Sueño de la Razón Produce Monstruos",
     "type": "Historieta · Fanzine · 2024",
-    "desc": "Una historieta de atmósfera oscura, dibujada en carboncillo, que explora el horror mediante texturas crudas e imágenes expresivas.<a href="https://www.gob.pe/institucion/cultura/noticias/680318-ministerio-de-cultura-presenta-a-los-ganadores-del-4-concurso-nacional-de-narrativa-grafica" target="_blank" rel="noopener noreferrer">Lee aquí la nota del Ministerio de Cultura ↗</a>",
+    "desc": "Una historieta de atmósfera oscura, dibujada en carboncillo, que explora el horror mediante texturas crudas e imágenes expresivas.",
     "images": [
       "assets/project-01/1-El-Sueno-de-la-razon-produce-monstruos-JOSHUA-GREY-J-GREY.jpg",
       "assets/project-01/2-El-Sueno-de-la-razon-produce-monstruos-JOSHUA-GREY-J-GREY.jpg",
