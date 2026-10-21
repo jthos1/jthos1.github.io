@@ -1,8 +1,10 @@
 const projects = [
   {
-    "title": "El Sueño de la Razón Produce Monstruos",
-    "type": "Historieta · Fanzine · 2024",
-    "desc": "Una historieta de atmósfera oscura, dibujada en carboncillo, que explora el horror mediante texturas crudas e imágenes expresivas.",
+    "title": "The Sleep of Reason Produces Monsters",
+    "type": "Comics · Zine · 2024",
+    "desc": "A dark, charcoal-drawn comic that explores horror through raw textures and expressive imagery.",
+    "shop": "https://ko-fi.com/s/82c33b08f8",
+    "shopLabel": "Read the comic on Ko-fi ↗",
     "images": [
       "assets/project-01/1-El-Sueno-de-la-razon-produce-monstruos-JOSHUA-GREY-J-GREY.jpg",
       "assets/project-01/2-El-Sueno-de-la-razon-produce-monstruos-JOSHUA-GREY-J-GREY.jpg",
@@ -13,9 +15,11 @@ const projects = [
     ]
   },
   {
-    "title": "La Laguna de Paca",
-    "type": "Narrativa gráfica · Carboncillo y pinceles digitales · 2026",
-    "desc": "Adaptación de una tradición oral peruana que combina la textura áspera del carboncillo con pinceles digitales para dar vida a una leyenda local mediante una narrativa visual expresiva.",
+    "title": "The Lagoon of Paca",
+    "type": "Graphic storytelling · Charcoal and digital brushes · 2026",
+    "desc": "An adaptation of a Peruvian oral tradition, blending the rough texture of charcoal with digital brushes to bring a local legend to life through expressive visual storytelling.",
+    "shop": "https://ko-fi.com/s/213ec87607",
+    "shopLabel": "Read the story on Ko-fi ↗",
     "images": [
       "assets/project-02/1-La-Laguna-de-Paca-JOSHUA-GREY-J-GREY.png",
       "assets/project-02/2-La-Laguna-de-Paca-JOSHUA-GREY-J-GREY.png",
@@ -26,9 +30,11 @@ const projects = [
     ]
   },
   {
-    "title": "El Diluvio",
-    "type": "Adaptación gráfica · Carboncillo y pinceles digitales · 2026",
-    "desc": "Relectura gráfica de una tradición oral peruana que combina texturas de carboncillo y pinceles digitales para evocar la atmósfera y la fuerza perdurable de un relato ancestral.",
+    "title": "The Flood",
+    "type": "Graphic adaptation · Charcoal and digital brushes · 2026",
+    "desc": "A graphic reimagining of a Peruvian oral tradition, combining charcoal textures and digital brushes to evoke the atmosphere and enduring force of an ancestral tale.",
+    "shop": "https://ko-fi.com/s/213ec87607",
+    "shopLabel": "Read the story on Ko-fi ↗",
     "images": [
       "assets/project-03/1-El-Diluvio-JOSHUA-GREY-J-GREY.png",
       "assets/project-03/2-El-Diluvio-JOSHUA-GREY-J-GREY.png",
@@ -39,9 +45,9 @@ const projects = [
     ]
   },
   {
-    "title": "Leyenda de María Paz",
-    "type": "Historieta · 2026",
-    "desc": "Adaptación en cuatro páginas de un relato tradicional, escrito por Noelia Zevallos.",
+    "title": "The Legend of María Paz",
+    "type": "Comic · 2026",
+    "desc": "A four-page adaptation of a traditional story written by Noelia Zevallos.",
     "images": [
       "assets/project-04/Leyenda-de-Maria-Paz-pagina1-JOSHUA-GREY-J-GREY.png",
       "assets/project-04/Leyenda-de-Maria-Paz-pagina2-JOSHUA-GREY-J-GREY.png",
@@ -50,17 +56,19 @@ const projects = [
     ]
   },
   {
-    "title": "Getting High (una historia inspirada en El Santo)",
-    "type": "Historieta · 2026",
-    "desc": "Historieta de tres páginas inspirada en la serie El Santo de New Orleans, escrita por Alessio Okumura para una próxima antología.",
+    "title": "Getting High (a story inspired by The Saint)",
+    "type": "Comic · 2026",
+    "desc": "A three-page comic inspired by the series The Saint of New Orleans, written by Alessio Okumura for an upcoming anthology.",
     "images": [
       "assets/project-05/EL-SANTO-DE-NUEVA-ORLEANS-JOSHUA-GREY-JGREY.jpg"
     ]
   },
   {
-    "title": "Divagaciones de un Pobre Diablo",
-    "type": "Historieta · Fanzine · 2026",
-    "desc": "Historieta independiente que explora la intersección surreal entre la imaginación, la literatura y las calles de Lima.",
+    "title": "Ramblings of a Wretched Devil",
+    "type": "Comic · Zine · 2026",
+    "desc": "An independent comic exploring the surreal intersection of imagination, literature, and the streets of Lima.",
+    "shop": "https://ko-fi.com/s/a1042bb6e7",
+    "shopLabel": "Read the comic on Ko-fi ↗",
     "images": [
       "assets/project-06/1-Divagaciones-de-un-Pobre-Diablo-JOSHUA-GREY-J-GREY.png",
       "assets/project-06/2-Divagaciones-de-un-Pobre-Diablo-JOSHUA-GREY-J-GREY.png",
@@ -110,14 +118,15 @@ cards.forEach(card=>card.addEventListener('click',()=>{
  document.getElementById('projectTitle').textContent=p.title;
  document.getElementById('detailTitle').textContent=p.title;
  document.getElementById('detailDescription').textContent=p.desc;
+ const cta=document.getElementById('detailCTA'); cta.replaceChildren(); cta.hidden=!p.shop; if(p.shop){const link=document.createElement('a');link.href=p.shop;link.target='_blank';link.rel='noopener noreferrer';link.textContent=p.shopLabel;cta.appendChild(link)}
  document.getElementById('detailType').textContent=p.type;
  document.getElementById('projectIndex').textContent=String(Number(card.dataset.project)+1).padStart(2,'0')+' / '+String(projects.length).padStart(2,'0');
  const art=document.getElementById('detailArt'); art.replaceChildren();
- // Cada proyecto admite hasta seis imágenes en su galería.
+ // Each project can include up to six gallery images.
  p.images.slice(0,6).forEach((src,i)=>{const img=document.createElement('img');img.src=src;img.alt=p.title+' — imagen '+(i+1);img.loading=i===0?'eager':'lazy';art.appendChild(img)});
  openPanel('projectPanel');
 }));
-// El primer desplazamiento hacia abajo expande la ficha; al volver al inicio, se recupera su altura inicial.
+// The first downward scroll expands the panel; returning to the top restores its initial height.
 panels.forEach(panel=>{
  panel.addEventListener('wheel',e=>{
   if(e.deltaY>0&&!panel.classList.contains('is-expanded')){e.preventDefault();expandPanel()}
@@ -135,7 +144,7 @@ panels.forEach(panel=>{
 document.getElementById('contactForm').addEventListener('submit',e=>{
  e.preventDefault();const data=new FormData(e.currentTarget);
  const subject=encodeURIComponent(data.get('subject'));
- const body=encodeURIComponent('Nombre: '+data.get('name')+'\nCorreo: '+data.get('email')+'\n\n'+data.get('message'));
- // El formulario prepara un correo dirigido a Joshua Grey.
+ const body=encodeURIComponent('Name: '+data.get('name')+'\nEmail: '+data.get('email')+'\n\n'+data.get('message'));
+ // The form prepares an email addressed to Joshua Grey.
  window.location.href='mailto:joshugr@gmail.com?subject='+subject+'&body='+body;
 });
