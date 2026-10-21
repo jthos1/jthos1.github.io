@@ -2,7 +2,7 @@ const projects = [
   {
     "title": "The Sleep of Reason Produces Monsters",
     "type": "Comics · Zine · 2024",
-    "desc": "A dark, charcoal-drawn comic that explores horror through raw textures and expressive imagery.",
+    "desc": "A dark comic drawn in charcoal, where raw textures, stark contrasts, and expressive imagery turn the page into an unsettling psychological landscape.",
     "shop": "https://ko-fi.com/s/82c33b08f8",
     "shopLabel": "Read the comic on Ko-fi ↗",
     "images": [
@@ -17,7 +17,7 @@ const projects = [
   {
     "title": "The Lagoon of Paca",
     "type": "Graphic storytelling · Charcoal and digital brushes · 2026",
-    "desc": "An adaptation of a Peruvian oral tradition, blending the rough texture of charcoal with digital brushes to bring a local legend to life through expressive visual storytelling.",
+    "desc": "Inspired by a Peruvian oral tradition, this graphic story combines the grain of charcoal with digital brushwork to evoke the mystery of a local legend.",
     "shop": "https://ko-fi.com/s/213ec87607",
     "shopLabel": "Read the story on Ko-fi ↗",
     "images": [
@@ -32,7 +32,7 @@ const projects = [
   {
     "title": "The Flood",
     "type": "Graphic adaptation · Charcoal and digital brushes · 2026",
-    "desc": "A graphic reimagining of a Peruvian oral tradition, combining charcoal textures and digital brushes to evoke the atmosphere and enduring force of an ancestral tale.",
+    "desc": "A graphic reimagining of a Peruvian oral tradition. Charcoal textures and digital brushwork give shape to an ancestral tale of upheaval, memory, and survival.",
     "shop": "https://ko-fi.com/s/213ec87607",
     "shopLabel": "Read the story on Ko-fi ↗",
     "images": [
@@ -45,9 +45,9 @@ const projects = [
     ]
   },
   {
-    "title": "The Legend of María Paz",
+    "title": "The Legend of Maria Paz",
     "type": "Comic · 2026",
-    "desc": "A four-page adaptation of a traditional story written by Noelia Zevallos.",
+    "desc": "A four-page comic adaptation of a traditional story written by Noelia Zevallos, told through expressive imagery and a compact visual rhythm.",
     "images": [
       "assets/project-04/Leyenda-de-Maria-Paz-pagina1-JOSHUA-GREY-J-GREY.png",
       "assets/project-04/Leyenda-de-Maria-Paz-pagina2-JOSHUA-GREY-J-GREY.png",
@@ -58,7 +58,7 @@ const projects = [
   {
     "title": "Getting High (a story inspired by The Saint)",
     "type": "Comic · 2026",
-    "desc": "A three-page comic inspired by the series The Saint of New Orleans, written by Alessio Okumura for an upcoming anthology.",
+    "desc": "A three-page comic inspired by Alessio Okumura’s series The Saint of New Orleans, created for an upcoming anthology.",
     "images": [
       "assets/project-05/EL-SANTO-DE-NUEVA-ORLEANS-JOSHUA-GREY-JGREY.jpg"
     ]
@@ -66,7 +66,7 @@ const projects = [
   {
     "title": "Ramblings of a Wretched Devil",
     "type": "Comic · Zine · 2026",
-    "desc": "An independent comic exploring the surreal intersection of imagination, literature, and the streets of Lima.",
+    "desc": "An independent comic drifting through the surreal intersection of imagination, literature, and the streets of Lima, where the everyday gives way to the uncanny.",
     "shop": "https://ko-fi.com/s/a1042bb6e7",
     "shopLabel": "Read the comic on Ko-fi ↗",
     "images": [
